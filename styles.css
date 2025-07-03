@@ -1,0 +1,219 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1, .hero p, .cta-button {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero h1.animate, .hero p.animate, .cta-button.animate {
+    animation: fadeInUp 1s forwards;
+}
+
+.hero h1.animate {
+    animation-delay: 0.5s;
+}
+
+.hero p.animate {
+    animation-delay: 1s;
+}
+
+.cta-button.animate {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Services Section */
+.services {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.service-item:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.service-item:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.service-item:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item:hover i {
+    color: #ffcc00;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #003366;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+/* About Section */
+.about {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #003366;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ffcc00;
+    color: #003366;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+form button.animate {
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2s;
+}
+
+form button:hover {
+    background-color: #e6b800;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
