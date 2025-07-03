@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aviotechnic - Aircraft Management, Lease Return, and Inspection Services">
+    <title>Aviotechnic - Aircraft Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Aviotechnic</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate">Excellence in Aircraft Management</h1>
+            <p class="animate">Your trusted partner for Aircraft Lease Return, Pre-Purchase, and Engine Records Inspection.</p>
+            <a href="#contact" class="cta-button animate">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="animate">Our Services</h2>
+        <div class="service-item animate">
+            <i class="fas fa-clipboard-check service-icon"></i>
+            <h3>Lease Return Inspection</h3>
+            <p>Ensure your aircraft meets the standards required for lease return with our comprehensive inspection services.</p>
+        </div>
+        <div class="service-item animate">
+            <i class="fas fa-search service-icon"></i>
+            <h3>Pre-Purchase Inspection</h3>
+            <p>Get an expert evaluation before buying an aircraft to avoid unforeseen issues and maximize your investment.</p>
+        </div>
+        <div class="service-item animate">
+            <i class="fas fa-cogs service-icon"></i>
+            <h3>Engine Records Inspection</h3>
+            <p>Thorough examination of engine records to ensure full compliance and safety of your aircraft.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="animate">About Us</h2>
+        <p>Aviotechnic is dedicated to providing top-notch aircraft management services. Our team of experienced professionals ensures that your aircraft is in peak condition and meets all regulatory standards.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="animate">Contact Us</h2>
+        <form action="your-backend-handler" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="animate">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aviotechnic. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
